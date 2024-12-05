@@ -8,7 +8,7 @@ struct producto{
 };
 
 int main(){
-    struct producto num[20];
+    
     int opcion_menu, num_productos,venta_productos;
     int cod_eliminar, cod_agregar, agregar, eliminar;
     int valor;
@@ -30,6 +30,7 @@ int main(){
             printf("\n\n******************************************** LLENAR INVENTARIO ********************************************\n\n");
             printf("\n¿Cuántos productos deseas ingresar?: ");
             scanf("%d",&num_productos); //Asigna este tamaño al arreglo
+            struct producto num[num_productos];
             llenarestructura(num,num_productos); //Llamar función
         break;
         case 2:
